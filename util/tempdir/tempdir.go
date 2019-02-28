@@ -19,7 +19,7 @@ func (d Dir) Cleanup() {
 	}
 }
 
-// Check whether the given directory is empty. Marks test failed on
+// CheckEmpty checks whether the given directory is empty. Marks test failed on
 // problems, and on any files seen.
 func (d Dir) CheckEmpty() {
 	f, err := os.Open(d.Path)
